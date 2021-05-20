@@ -61,5 +61,59 @@
 			javascript 动态页面(1.动画  2.交互)
 			css         样式美化(懂代码)
 			UI          美工
+	e.URL(统一资源定位器)
+		http://sports.sina.com.cn:80/slamdunk/live.shtml?id=2021051902
+		1.协议 			http://
+			一组规则规范
+			1>http协议
+				超文本传输协议:规定了数据在传输中先传输什么，后传输什么，怎样传输
+				超文本(富文本)有图有真相(声音、图像、视频)
+				普通文本
+			2>http协议的请求
+				get请求  请求信息显示在URL上，相对不安全，主要用于浏览
+					https://s.taobao.com/search?q=lv
+					https://s.taobao.com/search?q=zara
+				post请求 请求信息显示在请求体中，相对安全，主要用于提交
+			3>http协议的特点
+				无状态(彼此不记录过去的行为)
+			4>cookie&session
+				cookie  访问记录，验证信息  定投广告
+				session 验证信息，会话保持  30分钟超时
+			5>状态码
+				200    2开头请求成功
+				302    3开头移动或者缓存
+				404    4开头客户端请求有问题
+				500    5开头服务端有问题
+		2.域名/IP     	sports.sina.com.cn
+			FQDN(完全合格域名)
+				www.sina.com.cn
+				www.test.org
+			DNS(域名解析服务器)
+				正向解析(域名--IP)
+					1>ping
+						win+r--cmd--ping www.baidu.com
+					2>nslookup
+						win+r--cmd--nslookup www.baidu.com
+				反向解析(IP--域名)
+					win+r--cmd--nslookup  14.215.177.39
+		3.端口          80(80端口浏览器中不显示)
+			区分应用层进程的标识
+			常见端口  
+				80        apache/nginx/iis
+				8080      tomcat
+				3306      myswl
+				1521      oracle
+			win下查看端口信息
+				win+r--cmd--netstat -an | find "135"
+				netstat -an  查看系统开放的所有端口
+				|            管道，前面的输出作为后面的输入
+				find         搜索
+		4.虚拟目录      slamdunk
+		5.访问的文件     live.shtml
+		6.访问文件使用的参数  ?id=2021051902
+		7.补充
+			0.0.0.0   	任意IP地址
+			127.0.0.1   电脑本机  
+			localhost   电脑本机
 
 
