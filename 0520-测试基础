@@ -1,0 +1,65 @@
+1.软件基础
+2.抓包
+3.自动化测试环境部署
+4.自动化测试定位元素
+===========================================
+1.软件基础
+	a.常见的软件架构
+		QQ           c/s  
+		微信         c/s     b/s
+		王者荣耀      c/s
+		office       单机    c/s
+		高德         c/s     b/s
+		爱奇艺       c/s     b/s
+		淘宝         c/s     b/s
+		愤怒的小鸟   b/s     c/s
+		1>单机软件
+			不需要网络就可以执行的应用程序
+		2>b/s架构软件
+			b:浏览器
+				IE  		360  搜狗  QQ  UC  傲游 
+				firefox     测试 selenium2.0 自带firefox驱动 hackerbar
+				chrome      开发
+				safari      苹果
+			s:服务器
+			注意:b/s架构考虑的是不同浏览器，不同版本兼容性问题
+		3>c/s架构软件
+			c:客户端
+				移动端  手机 ipad  智能终端
+				pc端    笔记本电脑  台式机 服务器
+			s:服务器
+			注意:c/s架构考虑的是不同操作系统，不同位数的安装和反安装
+			32位   x86  i686 i386
+			64位   x86_64   x64
+	b.操作系统
+		unix  
+			mac OS 
+			ios
+			aix
+		linux
+			redhat  centos
+			suse    opensuse
+			ubuntu  麒麟
+		windows
+			desktop  
+				win7  win10  winxp
+			server
+				server 03  12  16
+	c.访问网站的过程
+		1.打开浏览器，输入www.sina.com.cn
+		2.系统会到hosts文件中搜索是否有www.sina.com.cn对应的IP地址，如果有，直接访问
+		3.如果没有，数据通过网络传输到DNS服务器(域名解析服务器)，解析域名为IP
+		4.数据通过网络传输到目标IP的web服务器上进行解析，发送请求给数据库服务器
+		5.数据库服务器返回响应数据，web服务器整合之后返回给浏览器
+	d.前端和后端
+		b/s架构的后端组成
+			操作系统
+			web服务器
+			数据库服务器
+		前端
+			html        静态页面(服务器上什么样子，网页上什么样子)[GIF]
+			javascript 动态页面(1.动画  2.交互)
+			css         样式美化(懂代码)
+			UI          美工
+
+
